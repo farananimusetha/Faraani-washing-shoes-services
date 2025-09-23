@@ -1,106 +1,91 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Contact us</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Faranani Shoe Cleaning</title>
+<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-<body bgcolor="white">
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1 style ="font-family:algerian;">FARANANI SHOE CLEANING SERVICE</h1>
-		  <h2 style ="font-family:Arial;">WELCOME TO FARANANI SHOE CLEANING SERVICE</h2>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li><a href="../index.html">Home page</a></li>
-          <li><a href="./pages/About us.html">About us</a></a></li>
-          <li class="selected"><a href="./pages/Gallery.html">Gallery</a></li>
-          <li><a href="./pages/Get involved.html">Get involved</a></li>
-          <li><a href="./pages/Contact us.html">Contact us</a></a></li>
-		  <li><a href="./pages/Our work.html">Our work</a></a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="content_header"></div>
-    <div id="site_content">
-      <img src="../assets/fari shoe wash.jpg" width="800" height="350">
-	  <div id="sidebar_container">
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <!-- insert your sidebar items here -->
-            <h3>Welcome To</h3>
-            <h4 font style ="font-family:impact;">FARANANI SHOE CLEANING SERVICE</h4>
-          
-            <p></p>
-          </div>
-          <div class="sidebar_base"></div>
+
+    <header>
+        <div class="logo">
+            <h1>Faranani Shoe Cleaning</h1>
+            <p>Keeping your shoes fresh & clean</p>
         </div>
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-           
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./About us.html" >About Us</a></li>
+                <li><a href="./Gallery.html">Gallery</a></li>
+                <li><a href="./Our work.html">Our Work</a></li>
+                <li><a href="./Get involved.html">Get Involved</a></li>
+                <li><a href="./Contact us.html">Contact Us</a></li>
             </ul>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <h3>Search</h3>
-            <form method="post" action="#" id="search_form">
-              <p>
-                <input class="search" type="text" name="search_field" value="Enter keywords....." />
-                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
-              </p>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="hero">
+            <h2>Contact Us</h2>
+            <p>Reach out to us via phone, WhatsApp, email, or social media. We're happy to answer your questions and
+                book your shoe care service!</p>
+        </section>
+
+        <section class="contact-info">
+            <h3>Our Contact Details</h3>
+            <ul>
+                <li><strong>Phone:</strong> 076 636 9168</li>
+                <li><strong>WhatsApp:</strong> 076 636 9168</li>
+                <li><strong>Email:</strong> info@farananishoecleaning.co.za</li>
+                <li><strong>Address:</strong> Venda, Limpopo, South Africa</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here"
+                    required></textarea>
+
+                <div class="form-buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
             </form>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-      </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1>Contact Us</h1>
-		<h1>call us: 076 636 9168</h1> 
-    <h1>find us on whatsapp: 076 636 9168</h1>  	
-	<button>
-	send
-	</button>
-	<p>
-		<ul>
-	  <li><a href ="https://www.facebook.com">facebook</a></li>
-   <li> <a href ="https://www.twitter.com">twitter</a></li>
-	<li><a href ="https://www.instagramcom">instagram</a></li>
-	<li></ul>
-        <p>Fill in</p>       
-          <div class="form_settings">
-            <p><span>Name</span><input class="contact" type="text" name="your_name" value="" /></p>
-            <p><span>Email Address</span><input class="contact" type="text" name="your_email" value="" /></p>
-            <p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
-            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="submit" /></p>
-			
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13990.716116965781!2d30.514666049153742!3d-22.737532019990027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec5ecaba80e85d7%3A0x4bb72b723220f9b8!2sTshilamba%2C%200956!5e1!3m2!1sen!2sza!4v1758315337463!5m2!1sen!2sza"
+            width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="social-section">
+            <h3>Follow Us</h3>
+            <div class="social-footer">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/27663792391" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:info@farananishoecleaning.co.za"><i class="fas fa-envelope"></i></a>
+                <a href="https://t.me/FarananiShoes" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+        </section>
 
+    </main>
 
+    <footer>
+        <p>&copy; 2025 Faranani Musetha | All Rights Reserved</p>
+    </footer>
 
-      </div>
-    </div>
-    <div id="content_footer"></div>
-    <div id="footer">
-
-     <p><marquee><p>copyright Author@Faranani Musetha</p></marquee></p>
-    </div>
-  </div>
 </body>
+
 </html>
