@@ -1,108 +1,108 @@
-<!DOCTYPE html>
+<<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Faranani Shoe Cleaning</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <title>Faranani Shoe Cleaning — Home</title>
+  <meta name="description" content="Faranani Shoe Cleaning: professional shoe cleaning, restoration and youth empowerment in Venda, Limpopo." />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-
 <body>
-
-    <header>
-        <div class="logo">
-            <h1>Faranani Shoe Cleaning</h1>
-            <p>Keeping your shoes fresh & clean</p>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Faranani logo">
+        <div>
+          <h1>Faranani Shoe Cleaning</h1>
+          <p>Restore. Protect. Empower.</p>
         </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./pages/About us.html">About Us</a></li>
-                <li><a href="./pages/Gallery.html">Gallery</a></li>
-                <li><a href="./pages/Our work.html">Our Work</a></li>
-                <li><a href="./pages/Get involved.html">Get Involved</a></li>
-                <li><a href="./pages/Contact us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
 
-    <main class="content">
+      <input id="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
 
-        <section class="hero">
-            <h2>Welcome to Faranani Shoe Cleaning Service</h2>
-            <p>Your trusted local shoe cleaning experts. From sneakers to luxury footwear, we keep every pair spotless
-                and polished.</p>
-            <a href="./pages/Contact us.html"><button class="hero-button">Book a Service</button></a>
-        </section>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="./pages/About us.html">About</a>
+        <a href="./pages/Gallery.html">Gallery</a>
+        <a href="./pages/Our work.html">Our Work</a>
+        <a href="./pages/Get involved.html">Get Involved</a>
+        <a href="./pages/enquiry.html">Enquiry</a>
+        <a href="./pages/Contact us.html">Contact</a>
+        <input id="site-search" type="text" placeholder="Search gallery/services..." style="padding:8px;border-radius:8px;background:#0b0b0b;border:1px solid rgba(255,255,255,0.04);color:#fff;margin-left:12px">
+      </nav>
+    </div>
+  </header>
 
-        <section class="cards">
-            <div class="card">
-                <i class="fas fa-shoe-prints service-icon"></i>
-                <h3>Shoe Wash</h3>
-                <p>Deep clean your shoes to remove dirt and stains, restoring their original look.</p>
-                <p><strong>Price:</strong> R50</p>
-                <a href="./pages/Contact us.html"><button>Book Now</button></a>
+  <main class="container">
+    <section class="hero">
+      <h2>Professional Shoe Cleaning & Restoration</h2>
+      <p>We provide reliable, affordable shoe care in Venda — deep cleaning, leather restoration, polishing and community training programs to empower local youth.</p>
+      <div style="margin-top:18px">
+        <a class="btn" href="enquiry.html">Get a Quote</a>
+        <a class="btn" href="gallery.html" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff;margin-left:10px">View Gallery</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="text-align:center;margin-bottom:18px">Our Services</h2>
+      <div class="card-grid">
+        <article class="card">
+          <div class="overlay"><img src="assets/shoe1.jpg" alt="Sneaker cleaning"></div>
+          <div class="card-body">
+            <h3>Sneaker Clean</h3>
+            <p>Deep-cleaning for fabric and synthetic sneakers. Removes stains & restores whiteness.</p>
+            <div class="meta">
+              <div class="price">R50</div>
+              <button class="btn" onclick="location.href='contact.html'">Book</button>
             </div>
+          </div>
+        </article>
 
-            <div class="card">
-                <i class="fas fa-sync service-icon"></i>
-                <h3>Shoe Restoration</h3>
-                <p>Repair and restore damaged shoes for a fresh, like-new appearance.</p>
-                <p><strong>Price:</strong> R120</p>
-                <a href="./pages/Contact us.html"><button>Book Now</button></a>
-            </div>
+        <article class="card">
+          <div><img src="assets/shoe2.jpg" alt="Leather restoration"></div>
+          <div class="card-body">
+            <h3>Leather Care</h3>
+            <p>Repair, condition and polish leather footwear for a renewed finish.</p>
+            <div class="meta"><div class="price">R120</div><button class="btn" onclick="location.href='contact.html'">Book</button></div>
+          </div>
+        </article>
 
-            <div class="card">
-                <i class="fas fa-leaf service-icon"></i>
-                <h3>Polish & Protect</h3>
-                <p>Polishing and protective coatings to make your shoes shine and last longer.</p>
-                <p><strong>Price:</strong> R70</p>
-                <a href="./pages/Contact us.html"><button>Book Now</button></a>
-            </div>
+        <article class="card">
+          <div><img src="assets/shoe3.jpg" alt="Polish and protect"></div>
+          <div class="card-body">
+            <h3>Polish & Protect</h3>
+            <p>Polishing and protective coating to extend life and shine of your shoes.</p>
+            <div class="meta"><div class="price">R70</div><button class="btn" onclick="location.href='contact.html'">Book</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-            <div class="card">
-                <i class="fas fa-brush service-icon"></i>
-                <h3>Luxury Shoe Care</h3>
-                <p>Specialized services for designer and premium shoes.</p>
-                <p><strong>Price:</strong> R200</p>
-                <a href="./pages/Contact us.html"><button>Book Now</button></a>
-            </div>
-        </section>
+    <section class="section">
+      <h2 style="text-align:center;margin-bottom:18px">Why Customers Choose Us</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+        <div class="card"><div class="card-body"><h3>Quality</h3><p>Industry-standard products & trained technicians.</p></div></div>
+        <div class="card"><div class="card-body"><h3>Speed</h3><p>Quick turnaround with reliable pickup/delivery options.</p></div></div>
+        <div class="card"><div class="card-body"><h3>Community</h3><p>We train and employ youth — giving back to Venda.</p></div></div>
+      </div>
+    </section>
 
-        <section class="about-home">
-            <h2>About Us</h2>
-            <p>Faranani Shoe Cleaning Service is committed to providing professional, reliable, and high-quality shoe
-                care. Our team is dedicated to making your footwear look perfect while empowering youth and contributing
-                to the local community. We handle all types of shoes – from casual sneakers to luxury brands.</p>
-        </section>
+  </main>
 
-        <section class="services-highlights">
-            <h2>Why Choose Us?</h2>
-            <ul>
-                <li>Expert shoe cleaning and restoration services</li>
-                <li>Fast and reliable service</li>
-                <li>Eco-friendly and safe cleaning products</li>
-                <li>Empowering local youth and creating opportunities</li>
-                <li>Convenient mobile and on-site services</li>
-            </ul>
-        </section>
+  <footer>
+    <div class="footer-inner">
+      <div class="socials">
+        <a href="https://www.facebook.com" target="_blank" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/2766369168" target="_blank" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@farananishoecleaning.co.za" aria-label="email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <small style="color:#bdbdbd">© 2025 Faranani Shoe Cleaning — Venda, Limpopo</small>
+    </div>
+  </footer>
 
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Faranani Musetha | All Rights Reserved</p>
-        <div class="social-footer">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/27663792391" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-        </div>
-    </footer>
-
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script defer src="js/script.js"></script>
 </body>
-
 </html>

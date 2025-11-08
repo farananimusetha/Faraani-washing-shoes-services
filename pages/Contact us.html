@@ -1,91 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Faranani Shoe Cleaning</title>
-<link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <title>Contact | Faranani Shoe Cleaning</title>
+  <meta name="description" content="Contact Faranani: phone, whatsapp, email, and interactive map.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo"><img src="assets/logo.png" alt="Faranani logo"><div><h1>Faranani Shoe Cleaning</h1><p>Contact</p></div></div>
+      <input id="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="menu-icon"><i class="fas fa-bars" style="color:#fff"></i></label>
+      <nav class="nav"><a href="../index.html">Home</a><a href="./About us.html">About</a><a href="./Gallery.html">Gallery</a><a href="./Our work.html">Our Work</a><a href="./Get involved.html">Get Involved</a><a href="./enquiry.html">Enquiry</a><a href="./Contact us.html" class="active">Contact</a></nav>
+    </div>
+  </header>
 
-    <header>
-        <div class="logo">
-            <h1>Faranani Shoe Cleaning</h1>
-            <p>Keeping your shoes fresh & clean</p>
+  <main class="container">
+    <section class="section hero">
+      <h2>Contact Us</h2>
+      <p>Reach out for bookings, volunteer inquiries, partnerships, or community programs. We aim to respond within 24 hours.</p>
+      <div style="margin-top:12px">
+        <span class="clock" id="clock" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+        <div>
+          <h3>Contact details</h3>
+          <p><strong>Phone:</strong> 076 636 9168</p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/2766369168" style="color:#fff">076 636 9168</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@farananishoecleaning.co.za" style="color:#fff">info@farananishoecleaning.co.za</a></p>
+          <p><strong>Address:</strong> Venda, Limpopo, South Africa</p>
+          <p class="small-note">Business hours: Mon–Sat 08:00–17:00</p>
         </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./About us.html" >About Us</a></li>
-                <li><a href="./Gallery.html">Gallery</a></li>
-                <li><a href="./Our work.html">Our Work</a></li>
-                <li><a href="./Get involved.html">Get Involved</a></li>
-                <li><a href="./Contact us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="content">
-        <section class="hero">
-            <h2>Contact Us</h2>
-            <p>Reach out to us via phone, WhatsApp, email, or social media. We're happy to answer your questions and
-                book your shoe care service!</p>
-        </section>
+        <div class="map-container" style="min-height:260px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)">
+          <!-- Embed Google Maps iframe or your preferred map. Replace src with your real location if desired -->
+          <iframe src="https://www.google.com/maps?q=Tshilamba,+Venda&output=embed" style="width:100%;height:100%;border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
 
-        <section class="contact-info">
-            <h3>Our Contact Details</h3>
-            <ul>
-                <li><strong>Phone:</strong> 076 636 9168</li>
-                <li><strong>WhatsApp:</strong> 076 636 9168</li>
-                <li><strong>Email:</strong> info@farananishoecleaning.co.za</li>
-                <li><strong>Address:</strong> Venda, Limpopo, South Africa</li>
-            </ul>
-        </section>
+    <section class="section">
+      <form id="contactForm" novalidate>
+        <h3>Send a message</h3>
+        <div class="form-row">
+          <div>
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+        </div>
 
-        <section class="contact-form">
-            <h3>Send Us a Message</h3>
-            <form action="#" method="post">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Your full name" required>
+        <div class="form-row">
+          <div>
+            <label for="type">Message type</label>
+            <select id="type" name="type" required>
+              <option value="General">General</option>
+              <option value="Booking">Booking</option>
+              <option value="Volunteer">Volunteer</option>
+              <option value="Sponsorship">Sponsorship</option>
+            </select>
+          </div>
+          <div>
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" placeholder="0761234567">
+          </div>
+        </div>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Your email" required>
+        <div class="form-row full">
+          <div class="full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+        </div>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message here"
-                    required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="reset" class="btn" style="background:#222;color:#fff">Reset</button>
+        </div>
+        <p class="small-note">After validation you'll be prompted to open your email client with the compiled message (mailto simulation) — or you can copy the message to send manually.</p>
+      </form>
+    </section>
+  </main>
 
-                <div class="form-buttons">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                </div>
-            </form>
-        </section>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13990.716116965781!2d30.514666049153742!3d-22.737532019990027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec5ecaba80e85d7%3A0x4bb72b723220f9b8!2sTshilamba%2C%200956!5e1!3m2!1sen!2sza!4v1758315337463!5m2!1sen!2sza"
-            width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <section class="social-section">
-            <h3>Follow Us</h3>
-            <div class="social-footer">
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://wa.me/27663792391" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="mailto:info@farananishoecleaning.co.za"><i class="fas fa-envelope"></i></a>
-                <a href="https://t.me/FarananiShoes" target="_blank"><i class="fab fa-telegram"></i></a>
-            </div>
-        </section>
+  <footer>
+    <div class="footer-inner container">
+      <div class="socials">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/2766369168" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@farananishoecleaning.co.za"><i class="fas fa-envelope"></i></a>
+      </div>
+      <small style="color:#bdbdbd">© 2025 Faranani Shoe Cleaning</small>
+    </div>
+  </footer>
 
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Faranani Musetha | All Rights Reserved</p>
-    </footer>
-
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script defer src="js/script.js"></script>
 </body>
-
 </html>

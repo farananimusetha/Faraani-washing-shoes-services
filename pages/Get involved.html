@@ -1,100 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Involved | Faranani Shoe Cleaning</title>
-<link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <title>Get Involved | Faranani Shoe Cleaning</title>
+  <meta name="description" content="Volunteer, intern or partner with Faranani Shoe Cleaning to support youth in Venda.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo"><img src="assets/logo.png" alt="Faranani logo"><div><h1>Faranani Shoe Cleaning</h1><p>Get Involved</p></div></div>
+      <input id="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="menu-icon"><i class="fas fa-bars" style="color:#fff"></i></label>
+     <nav class="nav"><a href="../index.html">Home
+      </a><a href="./About us.html">About
+      </a><a href="./Gallery.html">Gallery
+      </a><a href="./Our work.html" class="active">Our Work
+      </a><a href="./Get involved.html">Get Involved
+      </a><a href="./enquiry.html">Enquiry
+      </a><a href="./Contact us.html">Contact
 
-    <header>
-        <div class="logo">
-            <h1>Faranani Shoe Cleaning</h1>
-            <p>Keeping your shoes fresh & clean</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section hero">
+      <h2>Join Our Mission</h2>
+      <p>We welcome volunteers, interns and partners. Contribute time, skills or sponsorship and help us empower youth.</p>
+    </section>
+
+    <section class="section">
+      <form id="involveForm" novalidate>
+        <h3>Volunteer / Partner Form</h3>
+
+        <div class="form-row">
+          <div><label for="firstName">First name</label><input id="firstName" name="firstName" type="text" required></div>
+          <div><label for="lastName">Last name</label><input id="lastName" name="lastName" type="text" required></div>
         </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./About us.html" >About Us</a></li>
-                <li><a href="./Gallery.html">Gallery</a></li>
-                <li><a href="./Our work.html">Our Work</a></li>
-                <li><a href="./Get involved.html">Get Involved</a></li>
-                <li><a href="./Contact us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="content">
-        <section class="hero">
-            <h2>Get Involved</h2>
-            <p>Join our community initiatives, volunteer programs, or become part of our team. Your involvement helps us
-                empower youth and provide quality shoe care services.</p>
-        </section>
-
-        <section class="involvement-info">
-            <h3>Volunteer Opportunities</h3>
-            <ul>
-                <li>Assist in shoe cleaning and restoration at our facility</li>
-                <li>Help organize community outreach events</li>
-                <li>Support marketing and social media campaigns</li>
-                <li>Teach youth about entrepreneurship and shoe care</li>
-            </ul>
-
-            <h3>How You Can Help</h3>
-            <p>You can contribute by volunteering your time, donating supplies, or referring customers. Every effort
-                counts to grow our impact in the community.</p>
-        </section>
-
-        <section class="get-involved-form">
-            <h3>Sign Up to Get Involved</h3>
-            <form action="contact.html" method="post">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
-
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email" required>
-
-                <label for="province">Province</label>
-                <select id="province" name="province" required>
-                    <option value="">Select your province</option>
-                    <option value="lmp">Limpopo</option>
-                    <option value="kzn">KwaZulu-Natal</option>
-                    <option value="gp">Gauteng</option>
-                    <option value="wc">Western Cape</option>
-                    <option value="ec">Eastern Cape</option>
-                </select>
-
-                <label for="interests">Other Interests / Skills</label>
-                <textarea id="interests" name="interests" rows="4"
-                    placeholder="Tell us how you can contribute"></textarea>
-
-                <div class="form-buttons">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                </div>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Faranani Musetha | All Rights Reserved</p>
-        <div class="social-footer">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/27663792391" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <div class="form-row">
+          <div><label for="emailInv">Email</label><input id="emailInv" name="email" type="email" required></div>
+          <div><label for="phoneInv">Phone</label><input id="phoneInv" name="phone" type="tel"></div>
         </div>
-    </footer>
 
+        <div class="form-row full">
+          <div><label for="interest">How would you like to get involved?</label>
+            <select id="interest" name="interest" required>
+              <option value="">Please choose</option>
+              <option value="volunteer">Volunteer</option>
+              <option value="intern">Intern</option>
+              <option value="sponsor">Sponsor</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row full">
+          <div><label for="messageInv">Tell us about your skills / availability</label><textarea id="messageInv" name="message"></textarea></div>
+        </div>
+
+        <div class="form-actions"><button class="btn" type="submit">Submit</button><button class="btn" type="reset" style="background:#222;color:#fff">Reset</button></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner container"><div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fas fa-envelope"></i></a></div><small style="color:#bdbdbd">© 2025 Faranani Shoe Cleaning</small></div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script defer src="js/script.js"></script>
 </body>
-
 </html>

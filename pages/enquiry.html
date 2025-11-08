@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Enquiry | Faranani Shoe Cleaning</title>
+  <meta name="description" content="Get a quick quote and availability for services at Faranani Shoe Cleaning.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo"><img src="assets/logo.png" alt="Faranani logo"><div><h1>Faranani Shoe Cleaning</h1><p>Enquiry</p></div></div>
+      <input id="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="menu-icon"><i class="fas fa-bars" style="color:#fff"></i></label>
+      <nav class="nav"><a href="../index.html">Home</a><a href="./About us.html">About</a><a href="./Gallery.html">Gallery</a><a href="./Our work.html">Our Work</a><a href="./Get involved.html">Get Involved</a><a href="./enquiry.html" class="active">Enquiry</a><a href="./Contact us.html">Contact</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section hero">
+      <h2>Service Enquiry</h2>
+      <p>Choose a service, set the number of pairs, and we’ll give you an estimated cost and availability instantly.</p>
+    </section>
+
+    <section class="section">
+      <form id="enquiryForm" novalidate>
+        <h3>Get an Instant Quote</h3>
+
+        <div class="form-row">
+          <div>
+            <label for="fullname">Full name</label>
+            <input id="fullname" name="fullname" type="text" required>
+          </div>
+          <div>
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" placeholder="0761234567" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="1">Sneaker Clean — R50</option>
+              <option value="2">Leather Care — R120</option>
+              <option value="3">Polish & Protect — R70</option>
+              <option value="4">Luxury Care — R200</option>
+            </select>
+          </div>
+          <div>
+            <label for="quantity">Quantity (pairs)</label>
+            <input id="quantity" name="quantity" type="number" min="1" value="1" required>
+          </div>
+        </div>
+
+        <div class="form-row full">
+          <div class="full">
+            <label for="notes">Additional notes (optional)</label>
+            <textarea id="notes" name="notes" placeholder="Tell us about stains, materials, deadlines..."></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Get Quote</button>
+          <button type="reset" class="btn" style="background:#222;color:#fff">Reset</button>
+        </div>
+        <p class="small-note">After validation you'll be shown an estimate and option to go to Contact to book.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner container"><div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fas fa-envelope"></i></a></div><small style="color:#bdbdbd">© 2025 Faranani Shoe Cleaning</small></div>
+  </footer>
+
+  <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script defer src="js/script.js"></script>
+</body>
+</html>

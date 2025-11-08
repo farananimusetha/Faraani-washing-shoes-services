@@ -1,91 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Faranani Shoe Cleaning</title>
- <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <title>Gallery | Faranani Shoe Cleaning</title>
+  <meta name="description" content="Gallery of Faranani Shoe Cleaning: before & afters, community events, and training photos.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Faranani logo">
+        <div><h1>Faranani Shoe Cleaning</h1><p>Restore. Protect. Empower.</p></div>
+      </div>
+      <input id="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="menu-icon"><i class="fas fa-bars" style="color:#fff"></i></label>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="./About us.html">About</a><a href="./Gallery.html" class="active">Gallery</a><a href="./Our work.html">Our Work</a><a href="./Get involved.html">Get Involved</a><a href="./enquiry.html">Enquiry</a><a href="./Contact us.html">Contact</a>
+        <input id="site-search" type="text" placeholder="Search gallery..." style="padding:8px;border-radius:8px;background:#0b0b0b;border:1px solid rgba(255,255,255,0.04);color:#fff;margin-left:12px">
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <div class="logo">
-            <h1>Faranani Shoe Cleaning</h1>
-            <p>Keeping your shoes fresh & clean</p>
+  <main class="container">
+    <section class="section hero">
+      <h2>Gallery</h2>
+      <p>Click any image to enlarge. Prices listed below each item — press Contact to book.</p>
+    </section>
+
+    <section class="section">
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <article class="card gallery-card">
+          <div class="overlay"><img src="assets/shoe1.jpg" data-large="assets/shoe1.jpg" alt="Classic white sneakers (after)"></div>
+          <div class="card-body">
+            <h3>Classic Sneakers — Deep Clean</h3>
+            <p>Before & after cleaning for fabric and rubber. Restores shine.</p>
+            <div class="meta"><div class="price">R50</div><button class="btn" onclick="location.href='contact.html'">Contact</button></div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card gallery-card">
+          <div><img src="assets/shoe2.jpg" data-large="assets/shoe2.jpg" alt="Leather dress shoes (restored)"></div>
+          <div class="card-body">
+            <h3>Leather Restoration</h3>
+            <p>Color correction, conditioning and polish for leather footwear.</p>
+            <div class="meta"><div class="price">R120</div><button class="btn" onclick="location.href='contact.html'">Contact</button></div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card gallery-card">
+          <div><img src="assets/shoe3.jpg" data-large="assets/shoe3.jpg" alt="Sports shoes cleaned"></div>
+          <div class="card-body">
+            <h3>Sports Shoes — Deep Clean</h3>
+            <p>Deep cleans, stain removal and deodorize for sport footwear.</p>
+            <div class="meta"><div class="price">R60</div><button class="btn" onclick="location.href='contact.html'">Contact</button></div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card gallery-card">
+          <div><img src="assets/shoe4.jpg" data-large="assets/shoe4.jpg" alt="Designer shoe luxury care"></div>
+          <div class="card-body">
+            <h3>Luxury Shoe Care</h3>
+            <p>Premium restoration treating delicate and designer footwear.</p>
+            <div class="meta"><div class="price">R200</div><button class="btn" onclick="location.href='contact.html'">Contact</button></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="text-align:center;margin-bottom:12px">FAQ</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <div class="faq-q"><h4>How long does cleaning take?</h4><span>+</span></div>
+          <div class="faq-a">Standard cleaning usually takes 1–2 business days. Restoration may take longer depending on damage.</div>
         </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./About us.html" >About Us</a></li>
-                <li><a href="./Gallery.html">Gallery</a></li>
-                <li><a href="./Our work.html">Our Work</a></li>
-                <li><a href="./Get involved.html">Get Involved</a></li>
-                <li><a href="./Contact us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="content">
-        <section class="hero">
-            <h2>Our Gallery</h2>
-            <p>Explore our shoe cleaning results. Click “Book Now” to schedule your service!</p>
-        </section>
-
-        <section class="gallery-grid">
-            <div class="gallery-card">
-                <img src="../assets/shoe 3.jpg" alt="Cleaned Sneakers">
-                <h3>Cleaned Sneakers</h3>
-                <p>Price: R50</p>
-                <a href="./Contact us.html"><button>Book Now</button></a>
-            </div>
-            <div class="gallery-card">
-                <img src="../assets/shoe 4.jpg" alt="Polished Leather Shoes">
-                <h3>Polished Leather Shoes</h3>
-                <p>Price: R70</p>
-                <a href="./Contact us.html"><button>Book Now</button></a>
-            </div>
-            <div class="gallery-card">
-                <img src="../assets/shoe 5.jpg" alt="Luxury Shoe Care">
-                <h3>Luxury Shoe Care</h3>
-                <p>Price: R200</p>
-                <a href="./Contact us.html"><button>Book Now</button></a>
-            </div>
-            <div class="gallery-card">
-                <img src="../assets/shoe 6.jpg" alt="Shoe Restoration">
-                <h3>Shoe Restoration</h3>
-                <p>Price: R120</p>
-                <a href="./Contact us.html"><button>Book Now</button></a>
-            </div>
-            <div class="gallery-card">
-                <img src="../assets/shoe 7.jpg" alt="Premium Sneakers">
-                <h3>Premium Sneakers</h3>
-                <p>Price: R80</p>
-                <a href="./Contact us.html"><button>Book Now</button></a>
-            </div>
-            <div class="gallery-card">
-                <img src="../assets/shoe 8.jpg" alt="Designer Shoes">
-                <h3>Designer Shoes</h3>
-                <p>Price: R150</p>
-                <a href="./Contact us.html"><button>Book Now</button></a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Faranani Musetha | All Rights Reserved</p>
-        <div class="social-footer">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/27663792391" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <div class="faq-item">
+          <div class="faq-q"><h4>Do you collect & deliver?</h4><span>+</span></div>
+          <div class="faq-a">Yes — collection/delivery options are available in Venda and surrounding areas for an extra fee.</div>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
+  <div id="lightbox" aria-hidden="true"></div>
+
+  <footer>
+    <div class="footer-inner container">
+      <div class="socials">
+        <a href="https://www.facebook.com" target="_blank" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/2766369168" target="_blank" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@farananishoecleaning.co.za" aria-label="email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <small style="color:#bdbdbd">© 2025 Faranani Shoe Cleaning</small>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script defer src="js/script.js"></script>
 </body>
-
 </html>
